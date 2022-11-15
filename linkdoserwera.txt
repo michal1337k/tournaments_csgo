@@ -1,0 +1,2 @@
+
+steam://connect/IP:27015/yourpassword

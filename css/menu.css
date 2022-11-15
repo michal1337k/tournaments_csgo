@@ -1,0 +1,132 @@
+@font-face {
+  font-family: robot;
+  src: url(../font/RobotoCondensed-Regular.ttf);
+}
+
+.bg{
+	background: #181818;
+}
+.profil
+{
+    margin-left: 30%;
+    min-width: 30%;
+    max-width: 65%;
+    color:#ebebeb;
+}
+
+.navMenu{
+  font-family: 'robot';
+	display: flex;
+	width: 100%;
+  margin: -0.5% auto auto -1%;
+	justify-content: space-between;
+	text-align: center;
+	list-style-type: none;
+  position: fixed;
+  background-color: rgba(24, 24, 24, 1);
+  z-index: 5;
+}
+.navMenu a{
+    text-decoration: none;
+    color: #5599b8;
+    margin: auto;
+}
+.navMenu li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #5599b8;
+	min-width: 80px;
+	margin: auto;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.navMenu li:hover {
+  background-image: url("http://localhost/TURNIEJE/img/btnbg.png");
+  background-size: 100% 100%;
+  color: #5599b8;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 0 1px #000;
+	font-weight: bold;
+}
+.naVMenu li:active {
+  transform: translateY(4px);
+}
+.imghead:hover{
+  animation: spring 500ms ease-out;
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.profil a {
+  text-decoration: none;
+}
+
+.profil ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.profil img {
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.profil li {
+  background-color: #181818;
+	display: block;
+  float: left;
+	position: relative;
+	text-decoration: none;
+}
+.profil ul li ul li:hover{
+  background-color: #2a2a2a;
+}
+.profil li a {
+  color: #fff;
+  width: 100%;
+}
+
+.profil li:hover {
+  background-color: #181818;
+  background-image: none;
+	cursor: pointer;
+  animation: none;
+}
+
+.profil ul li ul {
+	visibility: hidden;
+  margin-top: 6%;
+  opacity: 0;
+	position: absolute;
+	left: 0;
+  display: none;
+}
+
+.profil ul li:hover > ul,
+.profil ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.profil ul li ul li {
+	clear: both;
+}

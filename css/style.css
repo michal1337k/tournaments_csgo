@@ -1,0 +1,683 @@
+@font-face {
+  font-family: robot;
+  src: url(../font/RobotoCondensed-Regular.ttf);
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #A0A0A0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.pagination a {
+  color: #A0A0A0;
+  background-color: #181818;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color.3s;
+  margin: 1%;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(160, 160, 160, 1);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(160, 160, 160, 1);
+  box-shadow: 0px 0px 2px 1px rgba(160, 160, 160, 1);
+}
+
+.pagination a:active, .pagination a:hover{
+  background-color: #6384cf;
+  color: #FFF;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #181818; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+/* ----------- */
+/* --------------------ALERTS -------------------- */
+.alert {
+  padding-top: 3.8%;
+  margin-left: -0.5%;
+  height: 2%;
+  width: 100%;
+  position: fixed;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+
+.alert.success {background-color: green;}
+.alert.info {background-color: #2196F3;}
+
+.closebtn {
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-right: 15.5%;
+  font-size: 22px;
+  line-height: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.textwarning{
+  float: left;
+  margin-left: 15.5%;
+  font-family: 'robot';
+  line-height: 50%;
+}
+.closebtn:hover {
+  color: black;
+}
+/* ----------------------------------------- */
+/* -------------------- SHOP AREA -------------------- */
+.productsarea{
+  font-family: "robot";
+  width: 60%;
+  max-width: 60%;
+  text-align: center;
+  display: block;
+  padding-top: 1%;
+  float: left;
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: #181818;
+  padding: 2% 5% 1% 5%;
+}
+.productsarea img{
+  height: 90px;
+  max-height: 90px;
+  max-width: 25%;
+}
+.product{
+  text-align: center;
+  float: left;
+  width: 31%;
+  max-width: 31%;
+  margin: 1%;
+  background-color:  #1c1c1c;
+  border-radius: 10%;
+}
+.product td {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.product th, .bproduct th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #5599b8;
+  padding-top: 2%;
+}
+.product:hover{
+  background-color: #162a33;
+  transition: background-color.9s;
+}
+.product button{
+  text-transform: uppercase;
+  background-color: #2a2a2a;
+  cursor: pointer;
+  color: #5599b8;
+	min-width: 40%;
+	margin: auto;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+.product button:hover, .bproduct button:hover{
+  background-size: 100% 100%;
+  animation: spring 300ms ease-out;
+	font-weight: bold;
+  background-color: #555;
+}
+.cena {
+  color: green;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+.bproduct {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin: 1%;
+  background-color:  #1c1c1c;
+  border-radius: 15px;
+  overflow-wrap: break-word;
+}
+.bproduct img{
+  width: 100%;
+  height: 100%;
+}
+.rline {
+  border-right: 2px solid #181818;
+  padding: 1%;
+}
+.bproduct button{
+  text-transform: uppercase;
+  background-color: #2a2a2a;
+  cursor: pointer;
+  color: #5599b8;
+	min-width: 20%;
+	margin: auto;
+  font-weight: bold;
+  margin-top: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+.cenasize {
+  font-size: 20px;
+}
+/* ----------------------------------------- */
+/* -------------------- USER PROFILE AREA -------------------- */
+.profilearea{
+  font-family: "robot";
+  width: 40%;
+  max-width: 40%;
+  display: block;
+  padding-top: 1%;
+  float: left;
+  margin-left: 25%;
+  margin-top: 5%;
+  background-color: #181818;
+  padding: 2% 5% 1% 5%;
+}
+.userdata{
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  font-size: larger;
+}
+.avatarprofile {
+  border: 1px solid #000;
+  border-radius: 50%;
+  max-width: 25%;
+  float: left;
+}
+.teamdata{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+.teamdata h3{
+  text-transform: uppercase;
+}
+.teamimg{
+  border: 1px solid #000;
+  width: 20%;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+.tnazwa {
+  text-decoration: none;
+  color:#6384cf;
+}
+.tnazwa:hover{
+  color:#555;
+  transition: color 0.4s;
+}
+.gablota, .stats, .daneteamu{
+  float: left;
+  font-weight: bold;
+  margin: 3% auto;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #5599b8;
+  width: 100%;
+}
+.odzn{
+  justify-content: left;
+  max-width: 6%;
+  padding: 1%;
+}
+.hr1 {
+  border: 0.1px solid #1f1f1f;
+}
+.statstable{
+  padding: 5%;
+  margin: 3% auto;
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  overflow-wrap: break-word;
+  border: 1px solid #1f1f1f;
+}
+.statstable th{
+  color:#5599b8;
+  border: 2px solid #1f1f1f;
+  font-size: 18px;
+  padding: 2%;
+}
+.statstable td{
+  padding: 2%;
+  font-size: 20px;
+  border: 2px solid #1f1f1f;
+}
+.edytujdruzyne{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#5599b8;
+  border: 2px solid #1f1f1f;
+  padding: 1%;
+  font-weight: bold;
+}
+.edytujprofil{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#5599b8;
+  border: 2px solid #1f1f1f;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 16px;
+}
+.edytujdruzyne:hover, .edytujprofil:hover{
+  border-color: #000;
+  color:#5a7683;
+  background-color:#2a2a2a;
+}
+.steamidhash{
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #000;
+  color: #000;
+  padding: 2%;
+}
+.steamidhash:hover {
+  color:green;
+  background-color: #181818;
+}
+.teamdata p{
+  text-transform: none;
+  font-weight: normal;
+}
+.gablota p{
+  text-transform: none;
+  font-weight: normal;
+  color: #A0A0A0;
+  margin-bottom: -1%;
+}
+/* ----------------------------------------- */
+/* -------------------- RANKING AREA -------------------- */
+.rankingarea{
+  font-family: "robot";
+  width: 60%;
+  max-width: 60%;
+  display: block;
+  padding-top: 1%;
+  float: left;
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: #181818;
+  padding: 2% 5% 1% 5%;
+}
+.ranking{
+  padding: 5%;
+  margin: 3% auto;
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  overflow-wrap: break-word;
+}
+.tdbor {
+  border-right: 2px solid #1f1f1f;
+}
+.rankingarea tr:hover{
+  background-color: #1f1f1f;
+}
+.searchrank {
+  margin: auto;
+  text-align: center;
+  font-family: "robot";
+  font-size: 20px;
+  color:#5599b8;
+  background-color: #181818;
+  border: 1px solid #ebebeb; 
+  border-radius: 5px;
+}
+.ranking th{
+  font-family: "robot";
+  text-transform: uppercase;
+  color: #5599b8;
+  border-bottom: 2px solid #1f1f1f;
+  font-size: 18px;
+  padding: 1%;
+}
+.ranking td {
+  min-width: 100px;
+  padding: 1%;
+  font-size: 20px;
+}
+.ranking a {
+  text-decoration: none;
+  color: #A0A0A0;
+}
+.ranking a:hover{
+  color:#5599b8
+}
+.filtr{
+  text-align: center;
+  margin: 2% auto;
+}
+.filtr a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5599b8;
+  padding: 1%;
+  margin: 1%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.filtr a:hover{
+  border: 1px solid #3e3e3e;
+  background-color: #555;
+}
+/* ----------------------------------------- */
+/* -------------------- TEAM AREA -------------------- */
+.kapitan {
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  margin-bottom: 3%;
+}
+.kapitan a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #A0A0A0;
+  transition: color 0.4s;
+  transition: border-color 0.4s;
+  padding: 2%;
+  border: 1px solid rgba(190, 178, 4, 0.3);
+  border-radius: 5px;
+}
+.kapitan a:hover {
+  color: #5a7683;
+  border-color: rgb(190, 178, 4);
+}
+.member{
+  font-weight: bold;
+  text-align: center;
+  width: 25%;
+  margin: 5% auto;
+  float: left;
+  font-size: larger;
+}
+.member a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #A0A0A0;
+  transition: color 0.4s;
+  transition: border-color 0.4s;
+  padding: 7%;
+  border: 1px solid #1f1f1f;
+  border-radius: 5px;
+}
+.member a:hover {
+  color: #5a7683;
+  border-color: #3e3e3e;
+}
+.teameditmembers{
+  margin: 2% auto;
+  text-align: center;
+  width: 50%;
+  border-collapse: collapse;
+}
+.teameditmembers a{
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  color:#A0A0A0;
+  transition: color 0.4s;
+}
+.teameditmembers a:hover{
+  color:#5a7683;
+}
+.teameditmembers td{
+  padding: 1%;
+}
+.btndelete{
+  padding: 3%;
+  text-transform: uppercase;
+  background-color: #3e3e3e;
+  color:#73a4bb;
+  font-weight: bold;
+  transition: color 0.4s;
+  transition: background-color 0.4s;
+}
+.btndelete:hover{
+  background-color: #999;
+  color:#162a33;
+}
+.addform{
+  text-align: center;
+  padding: 2%;
+}
+.teamedit{
+  text-align: center;
+  margin: auto;
+}
+.teaminput{
+  margin: auto;
+  text-align: center;
+  font-family: "robot";
+  font-size: 20px;
+  color:#5599b8;
+  background-color: #181818;
+  border: 1px solid #ebebeb; 
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.teaminput:disabled{
+  color:#366175;
+  border: 1px solid rgb(100, 100, 100); 
+}
+.confirmbutton{
+  text-transform: uppercase;
+  background-color: #3e3e3e;
+  color:#73a4bb;
+  font-weight: bold;
+  transition: color 0.4s;
+  transition: background-color 0.4s;
+  padding: 1%;
+}
+.confirmbutton:hover{
+  background-color: #999;
+  color:#162a33;
+}
+.filebtn{
+  border: 1px solid #3e3e3e;
+  border-radius: 10px;
+  padding:1%;
+}
+/* ----------------------------------------- */
+/* -------------------- TOURNAMENTS AREA -------------------- */
+.tournamentsarea{
+  font-family: "robot";
+  width: 50%;
+  max-width: 50%;
+  display: block;
+  padding-top: 1%;
+  float: left;
+  margin-left: 20%;
+  margin-top: 5%;
+  background-color: #181818;
+  padding: 2% 5% 1% 5%;
+}
+.naglowekturniej{
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  margin: 3% auto;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #5599b8;
+  width: 100%;
+}
+.tournamentblock{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin: 1%;
+  padding: 1.5%;
+  display: inline-block;
+  width: 27.9%;
+  border: 2px solid #1f1f1f;
+}
+.tournamentblock:hover{
+  border: 2px solid #3e3e3e;
+  transition: border 0.5s;
+}
+.tournamentblock table, th tr, td{
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  color:#c5c5c5;
+}
+.tournamentblock th{
+  font-size: 23px;
+  color: green;
+}
+.tournamentblock button{
+  background-color: #8b969b;
+  text-transform: uppercase;
+  color:#2a2a2a;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 75%;
+  height: 25px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.tournamentblock button:hover{
+  background-color: #5599b8;
+}
+.teamlist{
+  width: 100%;
+  margin-top: 2%;
+}
+.teamlist a{
+  padding: 2.2%;
+}
+.teamlist img{
+  width: 15%;
+  height: 15%;
+  border: 2px solid #555;
+  transition: border 0.5s;
+}
+.teamlist img:hover {
+  border: 2px solid #ebebeb;
+}
+.tournamentsarea h3{
+  color:#5599b8;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+.left-tour-area {
+  float: left;
+  width: 49.8%;
+  border-right: 2px solid #1f1f1f;
+  line-height: 170%;
+  font-size: large;
+}
+.right-tour-area{
+  float:right;
+  width: 47.9%;
+  padding-left: 2%;
+  line-height: 170%;
+  font-size: large;
+}
+.titletour{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color:#5599b8;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-top:-17%;
+}
+.buttonst{
+  text-align: center;
+  margin-bottom: 2%;
+}
+.buttonst button{
+  margin: auto;
+  padding: 1.5%;
+  border: 2px solid #1f1f1f;
+  color: #A0A0A0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #1f1f1f, -1px 1px 0 #1f1f1f, 1px 1px 0 #1f1f1f;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: large;
+  transition: border 0.5s;
+  cursor: pointer;
+}
+.buttonst button:hover{
+  border: 2px solid #555;
+}
+.zapisz {background-color: rgb(0, 75, 0);}
+.wypisz {background-color: rgb(71, 0, 0);}
+
+.starttimer{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: x-large;
+}
+.bbb{
+  color:green;
+}
+.nagloweknagrody{
+  padding-left: 30%;
+  margin-top: -6%;
+  padding-bottom: 3%;
+  text-transform: uppercase;
+  color:#5599b8;
+  font-size: larger;
+  font-weight: bold;
+}
+.r-row{
+  float:left;
+  text-align:center;
+  width: 20%;
+  margin-left:20%;
+  clear:both;
+}
+.r-rowr{
+  float:right;
+  width: 60%;
+}
+.t-rowl { 
+  float: left;
+  width: 30%;
+  margin-left: 20%;
+  
+}
+.t-rowr {
+  float: right;
+  width: 45%;
+  margin-right: 5%;
+}
+/* ----------------------------------------- */

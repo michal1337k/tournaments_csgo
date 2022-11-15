@@ -1,0 +1,112 @@
+
+/* ============================  POSTS ============================ */
+.topx {
+  padding-top: 5%;
+}
+.post {
+    width: 50%;
+    text-align: center;
+    display: block;
+    padding-top: 1%;
+    float: left;
+    margin-left: 20%;
+    background-color: #181818;
+    padding: 2% 5% 1% 5%;
+}
+.post img{
+  width: 100%;
+}
+.imgtext {
+  position: relative;
+  text-align: center;
+}
+.imgtextcenter {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-family: 'robot';
+  color: #5599b8;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+.header {
+  border-bottom: 1px solid #A0A0A0;
+  padding: 2%;
+}
+.text {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: 'Noto Sans', Calibri, Candara, Segoe, Geneva, Tahoma, Arial, sans-serif;
+  text-align: justify;
+}
+.date {
+  font-family: 'Noto Sans', Calibri, Candara, Segoe, Geneva, Tahoma, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color:#A0A0A0;
+}
+
+.center {
+    text-align: center;
+}
+/* ============================  =========== ============================ */
+
+/* ============================  RIGHT MENU ============================ */
+.rightmenu {
+  background-color: #181818;
+  position: fixed;
+  left: 70%;
+  width: 10%;
+  padding: 1%;
+  text-align: center;
+}
+.rightmenu img{
+  max-width: 70%;
+  min-width: 70%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.rightmenu th{
+  font-family: 'robot';
+  color: #5599b8;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #A0A0A0;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+.rightmenu td:hover{
+  transition: background-color.3s;
+  background-color: #0f465f;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(160, 160, 160, 1);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(160, 160, 160, 1);
+  box-shadow: 0px 0px 3px 1px rgba(160, 160, 160, 1);
+  border-radius: 5%;
+  animation: spring 300ms ease-out;
+}
+/* ============================  =========== ============================ */
+
+/* ============================  ANIMATION ============================ */
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+/* ============================  =========== ============================ */

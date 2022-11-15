@@ -1,0 +1,32 @@
+.menutourn{
+    padding: auto;
+    margin: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+}
+.menutourn a{
+    margin: auto;
+    padding: 15%;
+    border: 2px solid #1f1f1f;
+    background-color: #1f1f1f;
+    text-decoration: none;
+    color: #5599b8;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: large;
+    transition: border 0.5s;
+}
+.menutourn a:hover{
+    border: 2px solid #555;
+}
+.menutourn p{
+    vertical-align: center;
+}
+.menutourn ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
